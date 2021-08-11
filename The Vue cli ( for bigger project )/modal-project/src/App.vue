@@ -18,7 +18,7 @@
         <p>For updates and promo codes!</p>
       </Modal>
     </div>
-    <button @click.alt="toggleModel">Show Model (alt)</button>
+    <button @click.alt="toggleModel">Show Model (alt + Left Click)</button>
     <button @click="toggleModelTwo">Open Model</button>
   </div>
 </template>
@@ -34,7 +34,7 @@ export default {
       title: 'My First Vue App!',
       subTitle: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book',
       header: 'Sign up for the Giveaway!',
-      text: 'Grab this products for halp Prise...',
+      text: 'Grab this products for half Prise...',
       showModel: false,
       showModelTwo: false
     }
