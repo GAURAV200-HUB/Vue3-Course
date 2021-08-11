@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Methods and Click Events</title>
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+    </head>
+
+    <body>
+        <h1>Methods and Click Events</h1>
+
+        <div id="app">
+            <i>{{ title }} - {{ author }} - {{ age }}</i>
+            <br>
+            <button v-on:click="age++">Increase Age</button>      <!-- here v-on is an directive, there are many directives are available in Vue -->
+            <button v-on:click="age--">Decrease Age</button>      <!-- We can add small JavaScript here also -->
+            <div>
+                <button @click="title = 'Something Else'">Change Text</button>
+            </div>
+            <div>
+                <!-- <button @click="changeAuthor">Change Author</button> -->
+                <button @click="changeAuthor('Gaurav Kadam')">Change Author</button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+
+</html> 

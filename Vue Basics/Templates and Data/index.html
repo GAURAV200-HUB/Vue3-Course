@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Templates and Data</title>
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+    </head>
+
+    <body>
+        <h1>Templates and Data</h1>
+        <div id="app">
+            <p>The Final Empire</p>
+            <i>{{ title }} - {{ author }} - {{ age }}</i>
+            <br>
+            <!-- <em>{{ titles }} - {{ author }} - {{ age }}</em> 
+            if we trying to access something, which is not defind inside the Vue app, that will be not accessible here and it will not visible here -->
+        </div>
+        <!-- <p>{{ title }}</p> this will not be exected because this element is outside the Vue app -->
+        <script src="app.js"></script>
+    </body>
+
+</html>

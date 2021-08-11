@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Outputting Lists (v-for)</title>
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+    </head>
+
+    <body>
+        <h1>Outputting Lists (v-for)</h1>
+        <div id="app">
+            <div v-if="showBook">
+                <!-- we will used to show data from array here..., but if we have huge arrays or data we cant do here... -->
+                <i>{{ books[0].title }} - {{ books[0].author }} - {{ books[0].age }}</i>
+                <br>
+                <i>{{ books[1].title }} - {{ books[1].author }} - {{ books[1].age }}</i>
+                <br>
+                <i>{{ books[2].title }} - {{ books[2].author }} - {{ books[2].age }}</i>
+            </div>
+            <div v-if="showBook">
+                <ul>
+                    <li v-for="book in books">
+                        <h3>{{ book.title }}</h3>
+                        <p>{{ book.author }}</p>
+                        <i>{{ book.age }}</i>
+                    </li>
+                </ul>
+            </div>
+            <button @click="toggleBooks">
+                <span v-if="showBook">Hide Books</span>
+                <span v-else>Show Books</span>
+            </button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>

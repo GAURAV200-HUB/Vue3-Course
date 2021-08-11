@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Other Click Events</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+    </head>
+
+    <body>
+        <h1>Other Click Event</h1>
+
+        <div id="app">
+            <div v-if="showBook">
+                <p>{{ title }} - {{ author }} - {{ age }}</p>
+            </div>
+            <button @click="toggleBooks">
+                <span v-if="showBook">Hide Books</span>
+                <span v-else>Show Books</span>
+            </button>
+
+            <br>
+            <!-- Mouse Events -->
+
+            <div class="box" @mouseover="handleEvent">mouseover (enter)</div>
+            <div class="box" @mouseleave="handleEvent(5)">mouseleave (leave)</div>
+            <div class="box" @dblclick="handleEvent($event, 5)">doubleclick (click)</div>
+            <div class="box" @mousemove="handlemouseMove">Mouse Position: {{ x }} - {{ y }}</div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>

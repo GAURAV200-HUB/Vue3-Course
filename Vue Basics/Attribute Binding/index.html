@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attribute Binding</title>
+        <style>
+            img {
+                width: 150px;
+                height: 200px;
+            }
+
+            li {
+                list-style-type: none;
+            }
+        </style>
+        <script src="https://unpkg.com/vue@3.0.2"></script>
+    </head>
+
+    <body>
+        <h1>Attribute Binding</h1>
+        <div id="app">
+            <!-- Attribute Binding -->
+            <div>
+                <a v-bind:href="url">Vue Official Website</a>      <!-- v-bind is an derective which is used to bind the data to attributes -->
+                <br>
+                <a :href="url">Visit Vue...</a>
+            </div>
+            <div v-if="showBook">
+                <ul>
+                    <li v-for="book in books">
+                        <img :src="book.cover" :alt="book.title">
+                        <h3>{{ book.title }}</h3>
+                        <p>{{ book.author }}</p>
+                        <i>{{ book.age }}</i>
+                    </li>
+                </ul>
+            </div>
+            <button @click="toggleBooks">
+                <span v-if="showBook">Hide Books</span>
+                <span v-else>Show Books</span>
+            </button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
