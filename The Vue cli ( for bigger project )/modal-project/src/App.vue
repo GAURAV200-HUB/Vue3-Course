@@ -18,7 +18,7 @@
         <p>For updates and promo codes!</p>
       </Modal>
     </div>
-    <button @click="toggleModel">Show Model (alt)</button>
+    <button @click.alt="toggleModel">Show Model (alt)</button>
     <button @click="toggleModelTwo">Open Model</button>
   </div>
 </template>
