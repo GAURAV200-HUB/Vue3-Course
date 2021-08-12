@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Create a new homepage banner",
+      "details": "Define users and workflow",
+      "complete": true
+    },
+    {
+      "id": 2,
+      "title": "Start Making a new Website",
+      "details": "Identify resources to be monitored",
+      "complete": false
+    },
+    {
+      "id": 3,
+      "title": "Prepare for implementation",
+      "details": "Identify the implementation team",
+      "complete": true
+    },
+    {
+      "id": 4,
+      "title": "Prepare the test/QA environment",
+      "details": "Install test and QA servers and prerequisite software",
+      "complete": true
+    }
+  ]
+}
