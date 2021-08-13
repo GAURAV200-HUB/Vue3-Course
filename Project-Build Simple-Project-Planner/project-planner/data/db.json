@@ -3,14 +3,14 @@
     {
       "id": 1,
       "title": "Create a new website",
-      "details": "Define a all users and Workflow",
-      "complete": true
+      "details": "Define a all users and Workflow.",
+      "complete": false
     },
     {
       "id": 2,
       "title": "Start Making a new Website",
       "details": "Identify resources to be monitored",
-      "complete": false
+      "complete": true
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "id": 4,
       "title": "Prepare the test/QA environment",
       "details": "Install test and QA servers and prerequisite software",
-      "complete": false
+      "complete": true
     }
   ]
 }
