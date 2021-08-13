@@ -1,33 +1,25 @@
 <template>
   <div class="home">
     <h1>home Page</h1>
-    <p ref="p">My name is {{ name }} and my age is {{ age }}</p>
-    <button @click="handleClick">Click Me!</button>
-    <input type="text" v-model="name">
-    <br /><br/>
-    <button @click="age++">Increase Age</button>
-    <button                                                                                                                                                      @click="age--">Decrease Age</button>
+    <h3>Refs</h3>
+    <p>{{ ninjaOne.name }} - {{ ninjaOne.age }}</p>
+    <button @click="updateNinjaOne">Update Ninja One</button>                                                                                                                                                  @click="age--">Decrease Age</button>
   </div>
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref, reactive } from 'vue'
 
 export default {
   name: 'Home',
 
   setup() {
-    // const p = ref(null)
+    const ninjaOne = ref({ name: 'Mario', age: 30})
 
-    const name = ref('Mario')
-    const age = ref(30)
-
-    const handleClick = () => {
-      name.value = 'luigi'
-      age.value = 40
+    const updateNinjaOne = () => {
+      ninjaOne.value.age = 40
     }
-
-    return { name, age, handleClick}
+    return { ninjaOne, updateNinjaOne }
   }
 }
 </script>
