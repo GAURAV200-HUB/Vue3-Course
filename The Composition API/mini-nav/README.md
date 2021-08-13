@@ -1,4 +1,4 @@
-# dojo-blog
+# blog-mini
 
 ## Project setup
 ```

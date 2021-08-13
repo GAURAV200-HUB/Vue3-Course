@@ -1,5 +1,9 @@
 <template>
-  <router-view/>
+  <div class="main">
+    <router-link :to="{name: 'Home'}">Home</router-link> |
+    <router-link :to="{name: 'Home2'}">Home 2</router-link>
+    <router-view/>
+  </div>
 </template>
 
 <style>
