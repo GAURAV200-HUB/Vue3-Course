@@ -2,8 +2,8 @@
   "projects": [
     {
       "id": 1,
-      "title": "Create a new homepage banner",
-      "details": "Define users and workflow",
+      "title": "Create a new website",
+      "details": "Define a all users and Workflow",
       "complete": true
     },
     {
@@ -16,13 +16,13 @@
       "id": 3,
       "title": "Prepare for implementation",
       "details": "Identify the implementation team",
-      "complete": true
+      "complete": false
     },
     {
       "id": 4,
       "title": "Prepare the test/QA environment",
       "details": "Install test and QA servers and prerequisite software",
-      "complete": true
+      "complete": false
     }
   ]
 }

@@ -3,7 +3,9 @@
       <div class="actions">
           <h3 @click="showDetails = !showDetails">{{ project.title }}</h3>
           <div class="icons">
+            <router-link :to="{ name: 'EditProject', params: { id: project.id }}">
               <span class="material-icons">edit</span>
+            </router-link>
               <span @click="deleteProjects" class="material-icons">delete</span>
               <span @click="toggleComplete" class="material-icons tick">done</span>
           </div>
@@ -16,6 +18,8 @@
 
 <script>
 export default {
+    name: 'SigleProject',
+
     props: ['project'],
 
     data() {
@@ -52,11 +56,11 @@ export default {
         padding: 10px 20px;
         border-radius: 4px;
         box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
-        border-left: 4px solid #FA7D09;
+        border-left: 6px solid #FA7D09;
     }
 
     .projectDisplay.complete {
-        border-left: 4px solid #17B794;
+        border-left: 6px solid #17B794;
     }
 
     .projectDisplay.complete .tick {
