@@ -10,13 +10,13 @@
       "id": 2,
       "title": "Start Making a new Website",
       "details": "Identify resources to be monitored",
-      "complete": true
+      "complete": false
     },
     {
       "id": 3,
       "title": "Prepare for implementation",
       "details": "Identify the implementation team",
-      "complete": false
+      "complete": true
     },
     {
       "id": 4,

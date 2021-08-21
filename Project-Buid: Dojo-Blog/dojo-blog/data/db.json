@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "welcome to the new blog",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": [
+        "webdev",
+        "coding",
+        "news"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "top 5 CSS tips",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "tags": [
+        "css",
+        "webdev",
+        "coding"
+      ]
+    },
+    {
+      "id": 5729,
+      "title": "das",
+      "body": "dsadasdasd",
+      "tags": [
+        "java",
+        "ndasnd"
+      ]
+    },
+    {
+      "id": 8718,
+      "title": "das",
+      "body": "dsadasdasd",
+      "tags": [
+        "java",
+        "ndasnd"
+      ]
+    },
+    {
+      "title": "This is a new blog from Gaurav",
+      "body": "lorem ipsum!!!!!!!!!!!!!!!!",
+      "tags": [
+        "lorem",
+        "new",
+        "blog"
+      ],
+      "id": 8719
+    }
+  ]
+}
