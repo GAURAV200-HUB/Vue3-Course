@@ -1,4 +1,4 @@
-# composition-api-basics
+# dojo-blog
 
 ## Project setup
 ```
