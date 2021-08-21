@@ -12,14 +12,14 @@
 <script>
 import PostList from "../components/PostList.vue";
 import getPosts from "../composables/getPosts";
-import TagCloud from '../components/TagCloud.vue'
+import TagCloud from "../components/TagCloud.vue";
 import { useRoute } from "vue-router";
 import { computed } from "vue";
 
 export default {
   components: {
     PostList,
-    TagCloud
+    TagCloud,
   },
 
   setup() {

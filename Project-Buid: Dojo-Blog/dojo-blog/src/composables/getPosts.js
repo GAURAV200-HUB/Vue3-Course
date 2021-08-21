@@ -8,7 +8,7 @@ const getPosts = () => {
 
   const load = async () => {
     try {
-        // simulate delay
+      // simulate delay
       //   await new Promise(resolve => {
       //     setTimeout(resolve, 2000)
       // })
