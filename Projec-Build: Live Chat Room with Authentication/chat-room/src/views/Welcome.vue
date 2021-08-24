@@ -1,18 +1,48 @@
 <template>
-  <div class="home container">
-      <p>Welcome</p>
+  <div class="welcome container">
+    <p>Welcome</p>
+    <!-- <SignupForm /> -->
+    <br />
+    <LoginForm />
   </div>
 </template>
 
 <script>
-export default {
+import SignupForm from "../components/SignupForm.vue";
+import LoginForm from "../components/LoginForm.vue";
 
-}
+export default {
+  components: {
+    SignupForm,
+    LoginForm,
+  },
+};
 </script>
 
-<style scoped>
-    .home {
-        text-align: center;
-        padding: 20px 0;
-    }
+<style>
+.welcome {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* form style */
+.welcome form {
+    width: 300px;
+    margin: 20px auto;
+}
+
+.welcome label {
+    display: block;
+    margin: 20px 0 18px;
+}
+
+.welcome input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    outline: none;
+    color: #999;
+    margin: 10px auto;
+}
 </style>
